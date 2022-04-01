@@ -11,7 +11,6 @@ const auth = async(req, res, next) => {
         if(!shopappdetails){
             throw new Error()
         }
-
         req.shopappdetails = shopappdetails
         req.tokens = token
 
